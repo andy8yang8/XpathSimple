@@ -13,7 +13,7 @@ import org.w3c.dom.NodeList;
 public class Parser {
    public static void main(String[] args) throws Exception {
        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-       factory.setNamespaceAware(true); // never forget this!
+       factory.setNamespaceAware(true); // critical
        DocumentBuilder builder = factory.newDocumentBuilder();
        Document doc = builder.parse("test.xml");
 
